@@ -114,3 +114,4 @@ While the plugin will automatically validate a token and put it on the connectio
       console.log('Error', err);
 
     });
+If you want to skip processing (and validation) a token set the actions property `ignoreJWT` to `true`.
