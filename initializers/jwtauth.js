@@ -1,8 +1,8 @@
 var jsonwebtoken = require('jsonwebtoken');
 module.exports = {
-    loadPriority: 999,
-    startPriority: 999,
-    stopPriority: 999,
+    loadPriority: 998,
+    startPriority: 998,
+    stopPriority: 998,
 
     initialize: function(api, next) {
         api.jwtauth = {
