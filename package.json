@@ -6,7 +6,7 @@
   "license": "MIT",
   "name": "ah-jwtauth2-plugin",
   "description": "Implements JWT Authentication",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "homepage": "http://favo.org",
   "repository": {
     "type": "git",

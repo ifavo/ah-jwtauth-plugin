@@ -1,6 +1,9 @@
 var jsonwebtoken = require('jsonwebtoken');
 
 module.exports = {
+    loadPriority: 999,
+    startPriority: 999,
+    stopPriority: 999,
 
     initialize: function(api, next) {
 
@@ -8,6 +11,11 @@ module.exports = {
             name: 'jwt token validator',
             global: true,
             preProcessor: function(data, next) {
+
+                // for actions that want to ignore JWT alltogether
+                if (data.actionTemplate.ignoreJWT) {
+                  return next();
+                }
 
                 // is it required to have a valid token to access an action?
                 var tokenRequired = false;
